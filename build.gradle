@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.microsoft.playwright:playwright:1.40.0'
+    testImplementation 'org.testng:testng:7.8.0'
+}
+
+test {
+    useTestNG()
+}
